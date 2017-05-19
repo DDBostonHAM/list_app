@@ -31,15 +31,15 @@ while True:
     #grab input
     new_item = input("> ")
     #Check to see if equal to DONE to exit app
-    if new_item == "DONE":
+    if new_item == "DONE" or new_item == "done":
         break
-    elif new_item == "HELP":
+    elif new_item == "HELP" or new_item == "help":
         show_help()
         continue
-    elif new_item == "SHOW":
+    elif new_item == "SHOW" or new_item == "show":
         show_list()
         continue
-    elif new_item == "DELETE":
+    elif new_item == "DELETE" or new_item == "delete":
         del_item = input("What item would you liked removed? ")
         delete_item(del_item)
         continue
